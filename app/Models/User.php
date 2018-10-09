@@ -7,6 +7,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 //Authenticatable 是授权相关功能的引用
 
+//此模型对应数据库中的users表 Eloquent 将会假设 User 模型被存储记录在 users 数据表
 class User extends Authenticatable
 {
     //消息通知相关功能引用
@@ -31,4 +32,5 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+   
 }
