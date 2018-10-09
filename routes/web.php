@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hello',function(){
-    var_dump( getenv('APP_ENV') ) ;
-});
+
+Route::get('/home','StaticPagesController@home'); //主页
+Route::get('/help','StaticPagesController@help');    //帮助页
+Route::get('/about','StaticPagesController@about');     //关于页
