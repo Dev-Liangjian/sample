@@ -15,7 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//链式调用name方法为路由指定名称
 
-Route::get('/home','StaticPagesController@home'); //主页
-Route::get('/help','StaticPagesController@help');    //帮助页
-Route::get('/about','StaticPagesController@about');     //关于页
+Route::get('/home','StaticPagesController@home')->name('home'); //主页
+Route::get('/help','StaticPagesController@help')->name('help');    //帮助页
+Route::get('/about','StaticPagesController@about')->name('about');     //关于页
+
+
+
