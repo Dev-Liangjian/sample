@@ -77,8 +77,9 @@ return [
     | to any of the locales which will be supported by the application.
     |
     */
-
-    'locale' => 'en',
+    
+    //将项目语言设置为中文
+    'locale' => 'zh-CN',
 
     /*
     |--------------------------------------------------------------------------

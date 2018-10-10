@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>@yield('title','sample') --  yourself</title>
+    <title>@yield('title','sample') --  入门</title>
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
@@ -10,6 +10,7 @@
 
     <div class="container">
     <div class="col-md-offset-1 col-md-10">
+        @include('shared._messages')
         @yield('content')
         @include('layouts._footer')
     </div>
