@@ -7,7 +7,7 @@ use App\Models\User;
 
 class UsersController extends Controller
 {
-    //
+    //返回注册页面
     public function create()
     {
         return view('users.create');
@@ -36,7 +36,7 @@ class UsersController extends Controller
     	]);
 
     	//保存会话数据
-    	session()->flash('success','注册成功 欢迎');
+    	session()->flash('success','注册成功!欢迎');
 
     	//重定向到个人页面
     	return redirect()->route('users.show', [$user->id]);;
